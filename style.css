@@ -3,3 +3,94 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+
+  /* Grid effect with dark radial gradient */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at bottom left, rgba(255,255,255,0.1), transparent 70%);
+  
+  background-size:
+    40px 40px, /* horizontal lines */
+    40px 40px, /* vertical lines */
+    cover;
+
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 25px 60px;
+    transition: padding 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    z-index: 1000;
+    background-color: rgb(11, 11, 11);
+}
+.navbar .right-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+
+}
+.navbar .right-nav ul li{
+    list-style: none;
+    
+}
+.navbar .right-nav ul li a{
+    text-decoration: none;
+    color: #4da3ff;
+    font-weight: 600;
+}
+.navbar .left-nav a{
+    text-decoration: none;
+     color: #4da3ff;
+    font-weight: 600;
+
+}
+.home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-section .left-section{
+    padding: 80px 50px;
+}
+.home-section .left-section h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+.home-section .left-section h2 {
+      font-size: 30px;
+      color: #4da3ff;
+      margin-bottom: 20px;
+    }
+
+.home-section .left-section p {
+      font-style: italic;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+.home-section .right-section{
+      padding: 80px 80px;
+}
+.home-section .right-section img{
+    width: 350px;
+    height: 350px;
+}
