@@ -203,7 +203,8 @@ body {
 }
 
 .ExperEDU {
-  margin: 80px 0px;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* Section Title */
@@ -533,4 +534,184 @@ body {
 .social-icons a:hover {
   color: #007bff;
   transform: scale(1.2);
+}
+.footer {
+  background: linear-gradient(to bottom, #000, #111);
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-left h2 {
+  font-size: 1.8rem;
+}
+
+.footer-left p {
+  color: #aaa;
+  margin: 10px 0;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  color: #ccc;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+.footer-right h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.footer-right span {
+  color: #007bff;
+}
+
+.footer-right p {
+  margin: 6px 0;
+  color: #bbb;
+}
+
+.footer-right a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ======= Responsive Styles ======= */
+
+/* Large devices (desktops below 1200px) */
+@media (max-width: 1200px) {
+  .home-section .left-section h1 {
+    font-size: 50px;
+  }
+  .home-section .left-section h2 {
+    font-size: 26px;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (tablets below 992px) */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 20px 40px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar .right-nav ul {
+    gap: 15px;
+  }
+
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-section .left-section,
+  .home-section .right-section {
+    padding: 40px 20px;
+  }
+
+  .home-section .right-section img {
+    width: 280px;
+    height: auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Small devices (mobiles below 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar .right-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-section .left-section h1 {
+    font-size: 38px;
+  }
+
+  .home-section .left-section h2 {
+    font-size: 22px;
+  }
+
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .tech-icons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra small devices (mobiles below 576px) */
+@media (max-width: 576px) {
+  .home-section .left-section h1 {
+    font-size: 32px;
+  }
+
+  .home-section .left-section h2 {
+    font-size: 20px;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
 }
