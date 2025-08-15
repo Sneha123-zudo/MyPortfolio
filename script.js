@@ -20,9 +20,4 @@ function switchTab(evt, tabName) {
 });
 
 
-document.getElementById("hamburger").addEventListener("click", function() {
-    document.querySelector(".right-nav").classList.toggle("active");
-});
-
-
 
