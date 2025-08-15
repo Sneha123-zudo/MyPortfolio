@@ -18,3 +18,11 @@ function switchTab(evt, tabName) {
   alert("Message sent successfully!");
   this.reset();
 });
+
+
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.querySelector(".right-nav").classList.toggle("active");
+});
+
+
+
